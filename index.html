@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Search for information about national parks.">
+        <title>Eat-n-Entertain</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Eat-n-Entertain</h1>
+            <div>
+                <a href="#home" id="home-link">Home</a>
+            </div>
+        </header>
+        <main>
+            <section id=welcome>
+                <h1>Welome!</h1>
+                <button type="button" id="welcomeButton">Click to begin</button>
+            </section>
+                    
+            <section id="home" class="hidden">
+                <button type="button" id="the-meal-db">Recipe Search</button>
+                <button type="button" id="nyt-reviews">Entertainment</button>
+            </section>
+
+            <section id="recipe-search" class="hidden">
+                <h2>Please select the random button for a tasty recipe</h2>
+                <!--<input type="text" id="recipeSearch" placeholder="Main Ingredient: Beef">
+                <button id="searchButton">Search</button>-->
+                <button id="randomRecipe">Random Recipe</button>
+            </section>
+
+            <section id="nyt-search" class="hidden">
+                <h2>Click below for the latest movie reviews</h2>
+                <button id="nytButton">Movie Reviews-New York Times</button>
+            </section>
+
+            <section id="recipeResultsWindow" class="hidden">
+                <button type="reset" id="resetRecipeSearch">Reset</button>
+                <div id="recipeResults"></div>
+                <div id="nytResults"></div>
+            </section>
+        <main>
+        <footer>
+            <a href="mailto:duadtg@gmail.com">Contact Eat-n-Entertain</a>   
+            <a href="mailto:?subject=Check out Eat-n-Explore!&body=app website link">Share with a friend</a>
+        </footer>
+    
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </main> 
+    </body>
+</html>
