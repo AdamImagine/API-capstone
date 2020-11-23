@@ -1,19 +1,19 @@
 'use strict';
-// put your own value below!
 
+//home link function
 function headerLink() {
     $('#home-link').click(function(){
         javascript:window.location.reload();
     });
 }
-
+//button to advance into program
 function welcome() {
     $("#welcomeButton").click(function(){
         $("#welcome").addClass('hidden');
         $("#home").removeClass('hidden');
       });
 }
-
+//route selection reveal selected search
 function home() {
     $("#the-meal-db").click(function(){
         $("#home").addClass('hidden');
@@ -25,7 +25,7 @@ function home() {
     });
 
 }
-
+//fetch data from API
 function getRecipeResults(){
     console.log("getRecipeResults ran");
     $("#randomRecipe").click(function(){
@@ -37,17 +37,20 @@ function getRecipeResults(){
             return response.json();
         }        
     })
+    //run program to target specific values
     .then(response =>renderRecipe(response.meals))
-    .catch(err =>alert(err));   
+    .catch(err =>alert(err)); 
+    //display values  
     $('#recipeResultsWindow').removeClass('hidden'); 
     });
+    //reset search parameters and clear results
     $("#resetRecipeSearch").click(function(){
         $("#recipeResults").html("");
         $("#resetRecipeSearch").addClass('hidden');
     })
    
 }
-
+//targets specific values
 function renderRecipe(stuff)
 {
   $("#recipeResults").append("<h2>Meal:</h2>");
@@ -57,7 +60,7 @@ function renderRecipe(stuff)
   $("#recipeResults").append(`<p align="justify">${stuff[0]["strInstructions"]}</p>`);
 }
 
-    
+//fetch specific data from API
 function getReviews() {
     $("#nytButton").click(function() {
         const url = "https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=6BF9RHpCqGP53M7zc4eJAkeiGAlA1P7m";
@@ -82,6 +85,7 @@ function getReviews() {
           })
           .then(data => {
             console.log(data);
+//target specific data from API response
             renderReviewResults(data.results);
           })
           .catch(err => {
@@ -92,6 +96,7 @@ function getReviews() {
       
 }
 
+//iterate through data targeting sought after values
 function renderReviewResults(movies) {
   movies.forEach((m)=> {
      $("#nytResults").append(`<h2>${m["display_title"]}</h2>`);
@@ -99,11 +104,13 @@ function renderReviewResults(movies) {
     $("#nytResults").append(`<br><img src="${m["multimedia"]["src"]}">`);
     $("#nytResults").append("<h2>Summary:</h2>");
     $("#nytResults").append(`<p align="justify">${m["summary_short"]}</p>`);
+//reaveal specific data in results window
     $("#recipeResultsWindow").removeClass('hidden');
+//hide recipe reset search button
     $("#resetRecipeSearch").addClass('hidden');
   })
 }
-
+//document ready function
 function init(){
     headerLink();
     welcome();
