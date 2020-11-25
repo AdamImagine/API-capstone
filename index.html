@@ -10,50 +10,66 @@
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <h1>Eat-n-Entertain</h1>
-            <div>
-                <a href="#home" id="home-link">Home</a>
-            </div>
-        </header>
-        <main>
-            <section id=welcome>
-                <h2>Welome!</h2>
-                <button type="button" id="welcomeButton">Click to begin</button>
-            </section>
-                    
-            <section id="home" class="hidden">
-                <h2 class="hidden">home</h2>
-                <button type="button" id="the-meal-db">Recipe Search</button>
-                <button type="button" id="nyt-reviews">Entertainment</button>
-            </section>
+        <div class="multi-bg">
+            <header>
+                <h1>Eat-n-Entertain</h1>
+                <div>
+                    <a href="#home" id="home-link">Home</a>
+                </div>
+                <div class="header-img">
+                    <img src="frying-pan2.png" alt="image of frying pan">
+                    <img  src="movie-clapper2.png" alt="Image of movie clapper">
+                </div>
+            </header>
+            <main>
+                <section id=welcome>
+                    <div class="welcome-css">
+                    <h2>Welome!</h2>
+                    <button type="button" id="welcomeButton">Click to begin</button>
+                    </div>
+                </section>
+                        
+                <section id="home" class="hidden">
+                    <div class="welcome-css">
+                    <h2 class="hidden">home</h2>
+                    <button type="button" id="the-meal-db">Recipe Search</button>
+                    <button type="button" id="nyt-reviews">Entertainment</button>
+                    </div>
+                </section>
 
-            <section id="recipe-search" class="hidden">
-                <h2>Please select the random button for a tasty recipe</h2>
-                <!--<input type="text" id="recipeSearch" placeholder="Main Ingredient: Beef">
-                <button id="searchButton">Search</button>-->
-                <button id="randomRecipe">Random Recipe</button>
-            </section>
+                <section id="recipe-search" class="hidden">
+                    <div class="welcome-css">
+                    <h2>Please select the random button for a tasty recipe</h2>
+                    <!--<input type="text" id="recipeSearch" placeholder="Main Ingredient: Beef">
+                    <button id="searchButton">Search</button>-->
+                    <button id="randomRecipe">Random Recipe</button>
+                    </div>
+                </section>
 
-            <section id="nyt-search" class="hidden">
-                <h2>Click below for the latest movie reviews</h2>
-                <button id="nytButton">Movie Reviews-New York Times</button>
-            </section>
+                <section id="nyt-search" class="hidden">
+                    <div class="welcome-css">
+                    <h2>Click below for the latest movie reviews</h2>
+                    <button id="nytButton">Movie Reviews-New York Times</button>
+                    </div>
+                </section>
 
-            <section id="recipeResultsWindow" class="hidden">
-                <h2 class="hidden">recipe results</h2>
-                <button type="reset" id="resetRecipeSearch">Reset</button>
-                <div id="recipeResults"></div>
-                <div id="nytResults"></div>
-            </section>
-        </main>
-        <footer>
-            <a href="mailto:duadtg@gmail.com">Contact Eat-n-Entertain</a>   
-            <a href="mailto:?subject=Check%20out%20Eat-n-Explore!&body=https://adamimagine.github.io/API-capstone/">Share with a friend</a>
-        </footer>
-    
+                <section id="recipeResultsWindow" class="hidden">
+                    <div class="welcome-css">
+                        <h2 class="hidden">recipe results</h2>
+                        <button type="reset" id="resetRecipeSearch">Reset</button>
+                            <div class="welcome-css" id="recipeResults"></div>
+                            <div class="columns" class="welcome-css" id="nytResults"></div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <a href="mailto:duadtg@gmail.com">Contact Eat-n-Entertain</a>   
+                <a href="mailto:?subject=Check%20out%20Eat-n-Explore!&body=https://adamimagine.github.io/API-capstone/">Share with a friend</a>                
+            </footer>
         
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="index.js"></script> 
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="index.js"></script> 
+        </div>
     </body>
 </html>
