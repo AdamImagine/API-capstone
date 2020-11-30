@@ -103,7 +103,10 @@ button:hover{
     width: auto;
     margin: 5px 4em 0px 4em;
     font-size: 2em;
+}
 
+#recipeResults img {
+  width: 50%; 
 }
 
 .columns {
@@ -112,6 +115,7 @@ button:hover{
 }
 
 .boil-css {
+  width: 30%;
   margin: 3em;
   border: ivory;
   border-style: ridge;
