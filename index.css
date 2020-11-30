@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Texturina:wght@600&display=swap');
-
+\\css
 *
 {
     margin: 0px;
@@ -138,91 +137,3 @@ button:hover{
 }
 
 } 
-=======
-html {
-    min-height: 100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(353deg, rgba(255,255,255,0.5234159779614325) 0%, rgba(121,40,9,0.8319559228650137) 40%, rgba(255,244,0,1) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center right center left;
-   
- }
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    max-height: 100%;
-    
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-
-.header-img {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
-}
-  
-  body {
-      font-family: 'Roboto', sans-serif;
-      width: 100%;
-      height: 100%;
-       
-  }
-  
-.welcome-css {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-
-  button, input[type="text"] {
-    padding: 5px;
-  }
- 
-  a:hover {
-      color: brown;
-      transition: ease-in-out;
-  }
-  a {
-      color: rgb(235, 25, 25);
-  }
-
-  button:hover {
-    cursor: pointer;
-    transition: ease-in;
-  }
-  
-  .error-message {
-      color: red;
-  }
-  
-  .hidden {
-    display: none;
-  }
-
-  #recipeResults {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      width: auto;
-
-  }
-
-.columns {
-    column-count: 2;
-}
->>>>>>> cb8f7ed447e659c058ffc30337965c4be2109ba8

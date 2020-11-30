@@ -1,5 +1,5 @@
 'use strict';
-
+//js
 //home link function
 function headerLink() {
     $('#home-link').click(function(){
