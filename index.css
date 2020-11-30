@@ -6,9 +6,9 @@
     padding: 0px;
 }
 
-html, body{
+html, body {
   height: 100%;
-  width: auto%;
+  width: auto;
   font-family: 'Roboto', sans-serif;
   background: rgb(255,255,255);
   background: linear-gradient(353deg, rgba(255,255,255,0.5234159779614325) 0%, cornflowerblue 40%, rgba(255,244,0,1) 100%);
