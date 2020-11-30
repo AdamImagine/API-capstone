@@ -63,6 +63,7 @@ function renderRecipe(stuff)
 //fetch specific data from API
 function getReviews() {
     $("#nytButton").click(function() {
+      $("#nytResults").html("");
         const url = "https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=6BF9RHpCqGP53M7zc4eJAkeiGAlA1P7m";
         const options = {
           method: "GET",
