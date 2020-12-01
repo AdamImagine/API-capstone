@@ -96,21 +96,25 @@ button:hover{
 }
 
 #recipeResults {
+    font-size: 1.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: auto;
-    margin: 5px 4em 0px 4em;
-    font-size: 2em;
+    width: 100%;
+    margin: 5px 10px 0px 10px;    
+}
+
+#recipeResults p {
+  margin: 10px;
 }
 
 #recipeResults img {
-  width: 60%; 
+  width: 30 %; 
 }
 
 .columns {
-  column-count: 2;
+  column-count: 1;
   margin: 2em;
 }
 
@@ -140,9 +144,12 @@ button:hover{
   width: 20%;
 }
 
-#recipeResults img 
-{
-  width: 80%; 
+#recipeResults img {
+  width: 35%; 
 }
 
+.columns {
+  column-count: 2;
+  margin: 2em;
+}
 } 
